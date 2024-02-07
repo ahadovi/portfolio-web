@@ -2,17 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-.gradient-primary {
-  background: linear-gradient(
-    180deg,
-    #f8fafc,
-    rgba(242, 202, 252, 0.11) 34.69%,
-    rgba(250, 198, 252, 0.11) 44.06%,
-    rgba(175, 183, 255, 0.11) 54.48%,
-    rgba(142, 220, 200, 0.07) 64.9%,
-    #f8fafc 97.95%
-  );
+@layer base {
+  body {
+    @apply dark:bg-[#1b1b1f] dark:text-textDark bg-white text-textLight;
+  }
 }
 
-.mask-wrap {
+.mask-big {
+  mask-image: url('/maskOne.svg');
+  mask-repeat: no-repeat;
+  mask-size: 454px auto;
+  mask-position: center;
+  @apply overflow-hidden lg:max-h-[517px] max-w-[454px] mx-auto;
 }

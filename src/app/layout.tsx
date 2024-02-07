@@ -1,6 +1,14 @@
+import ThemeSwitcher from '@/components/theme-provider/ThemeSwitcher';
+import ThemeWrap from '@/components/theme-provider/ThemeWrap';
 import { TailwindIndicator } from '@/lib/utils/tailwind-indicator';
+import Navbar from '@/shared/navbar';
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import type { Metadata } from 'next';
 import '../styles/globals.css';
+
+//= Font awesome auto css disabled
+config.autoAddCss = false;
 
 export const metadata: Metadata = {
   title: 'Abdul Ahad Ovi - Personal Portfolio',
@@ -14,10 +22,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
-        {children}
-        <TailwindIndicator />
+    <html lang="en" suppressHydrationWarning>
+      <body className="font-system">
+        <ThemeWrap>
+          <Navbar />
+          {children}
+          <ThemeSwitcher />
+          <TailwindIndicator />
+        </ThemeWrap>
       </body>
     </html>
   );

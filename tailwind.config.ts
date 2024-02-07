@@ -2,6 +2,7 @@ import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
+  darkMode: 'class',
   theme: {
     container: {
       center: true,
@@ -29,9 +30,20 @@ const config: Config = {
         base: ['16px', { lineHeight: '24px' }],
       },
       colors: {
-        textPrimary: '#0f172a',
-        textSecondary: '#07A8ED',
-        textPara: '#334155',
+        bgInactiveLightLink: '#ebebef',
+        bgInactiveDarkLink: '#32363f',
+        bgInactiveLight: '#f6f6f7',
+        bgInactiveDark: '#202127',
+        textLight: {
+          DEFAULT: 'rgb(60,60,67)',
+          600: 'rgba(60, 60, 67, .56)',
+          800: 'rgba(60, 60, 67, .78)',
+        },
+        textDark: {
+          DEFAULT: 'rgba(255, 255, 245, .86)',
+          600: 'rgba(235, 235, 245, .6)',
+          300: 'rgba(235, 235, 245, .38)',
+        },
       },
       animation: {},
       keyframes: {},
