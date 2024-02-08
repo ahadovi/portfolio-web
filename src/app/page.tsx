@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import Link from 'next/link';
 //= Images
+import { getAge } from '@/lib/utils';
 import largeThumb from '../../public/ovi-big.png';
 import mobileThumb from '../../public/ovi.png';
 
@@ -39,14 +40,14 @@ export default function Home() {
             Sr. Frontend Web Developer
           </h3>
           <p className="dark:text-textDark text-balance text-base">
-            Passionate and proactive developer with 5+ years of experience, who
-            loves to write clean, maintainable code. I am always eager to learn
-            from every single incident for getting the best of me.
+            Passionate and proactive developer with {getAge('2018-08-01')}+
+            years of experience, who loves to write clean, maintainable code. I
+            am always eager to learn from every single incident for getting the
+            best of me.
           </p>
           <div className="flex items-center gap-x-3 justify-center lg:justify-start flex-wrap">
             <Link
               href="https://github.com/ahadovi"
-              download
               target="_blank"
               className="bg-lime-600 dark:bg-amber-500 w-11 h-11 lg:w-12 lg:h-12 rounded-full text-white mt-4 inline-flex items-center justify-center gap-x-2.5 font-medium lg:text-xl"
             >
@@ -55,7 +56,6 @@ export default function Home() {
 
             <Link
               href="https://www.linkedin.com/in/ahad-ovi/"
-              download
               target="_blank"
               className="bg-lime-600 dark:bg-amber-500 w-11 h-11 lg:w-12 lg:h-12 rounded-full text-white mt-4 inline-flex items-center justify-center gap-x-2.5 font-medium lg:text-xl"
             >

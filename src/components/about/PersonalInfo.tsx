@@ -1,6 +1,9 @@
 import { getAge } from '@/lib/utils';
+import { faUpwork } from '@fortawesome/free-brands-svg-icons';
+import { faFonticonsFi } from '@fortawesome/free-brands-svg-icons/faFonticonsFi';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const PersonalInfo = () => {
@@ -85,14 +88,43 @@ const PersonalInfo = () => {
           </strong>
         </li>
       </ul>
-      <Link
-        href="/cv/Abdul_Ahad_Ovi.pdf"
-        download
-        target="_blank"
-        className="bg-lime-600 dark:bg-amber-500 py-2.5 px-6 rounded-full text-white mt-6 md:mt-10 inline-flex items-center justify-center gap-x-2.5 font-medium lg:text-xl"
-      >
-        <FontAwesomeIcon icon={faFileDownload} /> Download CV{' '}
-      </Link>
+      <div className="flex items-center gap-x-3 mt-6 md:mt-10">
+        <Link
+          href="https://braincraftapps.com/our-team"
+          target="_blank"
+          className="bg-lime-600 dark:bg-amber-500 w-11 h-11 lg:w-12 lg:h-12 rounded-full text-white inline-flex items-center justify-center gap-x-2.5 font-medium lg:text-xl"
+        >
+          <Image
+            src="/bc.png"
+            alt="bc"
+            width={16}
+            height={16}
+            className="w-[14px] md:w-[16px] h-auto"
+          />
+        </Link>
+        <Link
+          href="https://www.upwork.com/freelancers/~017eb64f70acbcfb06"
+          target="_blank"
+          className="bg-lime-600 dark:bg-amber-500 w-11 h-11 lg:w-12 lg:h-12 rounded-full text-white inline-flex items-center justify-center gap-x-2.5 font-medium lg:text-xl"
+        >
+          <FontAwesomeIcon icon={faUpwork} />
+        </Link>
+        <Link
+          href="https://www.fiverr.com/ahadovi33"
+          target="_blank"
+          className="bg-lime-600 dark:bg-amber-500 w-11 h-11 lg:w-12 lg:h-12 rounded-full text-white inline-flex items-center justify-center gap-x-2.5 font-medium lg:text-xl"
+        >
+          <FontAwesomeIcon icon={faFonticonsFi} />
+        </Link>
+        <Link
+          href="/cv/Abdul_Ahad_Ovi.pdf"
+          download
+          target="_blank"
+          className="bg-lime-600 dark:bg-amber-500 py-2.5 px-6 rounded-full text-white inline-flex items-center justify-center gap-x-2.5 font-medium lg:text-xl"
+        >
+          <FontAwesomeIcon icon={faFileDownload} /> Download CV{' '}
+        </Link>
+      </div>
     </div>
   );
 };

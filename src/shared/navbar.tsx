@@ -10,7 +10,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <ul className="fixed -bottom-0.5 left-0 right-0 lg:left-auto lg:top-2/4 lg:right-8 lg:-translate-y-2/4 z-20 inline-flex items-center justify-between lg:items-start lg:justify-start lg:flex-col lg:gap-5 shadow-[0_0_47px_#dedede] bg-white/[0.90] backdrop-blur pt-2.5 pb-3 px-5 sm:py-3 sm:px-10 lg:p-0 lg:bg-transparent dark:lg:bg-transparent lg:shadow-none dark:shadow-none dark:bg-bgInactiveDark/[0.95]">
+    <ul className="fixed -bottom-0.5 left-0 right-0 lg:left-auto lg:top-2/4 lg:right-8 lg:-translate-y-2/4 z-20 inline-flex items-center justify-between lg:items-start lg:justify-start lg:flex-col lg:gap-5 shadow-[0_0_47px_#dedede] bg-white/[0.90] backdrop-blur lg:backdrop-blur-none pt-2.5 pb-3 px-5 sm:py-3 sm:px-10 lg:p-0 lg:bg-transparent dark:lg:bg-transparent lg:shadow-none dark:shadow-none dark:bg-bgInactiveDark/[0.95]">
       {navbarLinks &&
         navbarLinks?.map((navItem: NavLinksType) => (
           <li key={navItem?.id}>

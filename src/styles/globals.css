@@ -15,3 +15,12 @@
   mask-position: center;
   @apply overflow-hidden lg:max-h-[517px] max-w-[454px] mx-auto;
 }
+
+/* Circle Progressbar */
+.CircularProgressbar-path {
+  @apply !stroke-lime-600 dark:!stroke-amber-500;
+}
+.CircularProgressbar-trail {
+  @apply !stroke-bgInactiveLightLink dark:!stroke-bgInactiveDarkLink;
+}
+/* Circle Progressbar */
