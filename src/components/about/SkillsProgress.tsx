@@ -1,4 +1,5 @@
 import CircleProgress from '@/components/about/CircleProgress';
+import ProgressInfo from '@/components/about/ProgressInfo';
 import { skillsData } from '@/constant/skillsData';
 import { SkillItemProps } from '@/types/skills';
 
@@ -15,13 +16,15 @@ const SkillsProgress = () => {
               key={skill?.id}
               className="max-w-[80%] md:max-w-[90%] 2xl:max-w-full mx-auto"
             >
-              <CircleProgress
-                value={skill?.percentValue}
-                title={skill?.title}
-                color={skill?.iconColor}
-                hrefLink={skill?.hrefLink}
-                icon={skill?.icon}
-              />
+              <CircleProgress value={skill?.percentValue}>
+                <ProgressInfo
+                  value={skill?.percentValue}
+                  title={skill?.title}
+                  color={skill?.iconColor}
+                  hrefLink={skill?.hrefLink}
+                  icon={skill?.icon}
+                />
+              </CircleProgress>
             </div>
           ))}
       </div>

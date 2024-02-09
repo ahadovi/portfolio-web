@@ -31,7 +31,7 @@ const PersonalInfo = () => {
         </li>
         <li>
           Freelance: <br className="md:hidden" />{' '}
-          <strong className="text-[15.5px] font-medium">Available</strong>
+          <strong className="text-[15.5px] font-medium">Not Available</strong>
         </li>
         <li>
           Remote: <br className="md:hidden" />
@@ -97,9 +97,9 @@ const PersonalInfo = () => {
           <Image
             src="/bc.png"
             alt="bc"
-            width={16}
-            height={16}
-            className="w-[14px] md:w-[16px] h-auto"
+            width={14}
+            height={14}
+            className="w-[12px] md:w-[14px] h-auto"
           />
         </Link>
         <Link

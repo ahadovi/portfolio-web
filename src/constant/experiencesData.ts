@@ -21,7 +21,7 @@ export const experiencesData: ExperiencesDataProps[] = [
     designation: 'Sr. Frontend Web Developer',
     companyName: 'Luminalogik (part-time)',
     linkHref: 'https://luminalogik.com/',
-    description: `I am currently working as a part-time Sr. frontend web developer. In my current role, I am focused on various JavaScript
+    description: `Working as a part-time Sr. frontend web developer. In my current role, I am focused on various JavaScript
     frameworks including React.js, Next.js, Tailwind Css, Shad Cn, etc. Additionally, This diverse
     experience allows me to continuously enhance my skills and contribute
     effectively to both frontend and backend development tasks.`,
@@ -56,6 +56,6 @@ export const experiencesData: ExperiencesDataProps[] = [
     companyName: 'Upwork / Fiverr',
     linkHref: 'https://www.upwork.com/freelancers/~017eb64f70acbcfb06',
     description: `Working as a full-time freelance frontend web
-    developer.Here, I am focused PSD, XD, Figma to HTML, CSS, SCSS, Responsive Layout, various frameworks including JQuery, Bootstrap. Additionally, Wordpress theme customization`,
+    developer.Here, I am focused PSD, XD, Figma to HTML, CSS, SCSS, Responsive Layout, various frameworks including JQuery, Bootstrap. Additionally, Wordpress theme customization.`,
   },
 ];
