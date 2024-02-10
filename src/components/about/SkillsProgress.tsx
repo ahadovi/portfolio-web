@@ -9,7 +9,7 @@ const SkillsProgress = () => {
       <h3 className="block text-xl md:text-2xl font-medium md:font-bold uppercase mb-6 md:mb-12 dark:text-white">
         My Skills
       </h3>
-      <div className="grid items-center gap-6 sm:gap-10 md:gap-14 lg:gap-20 xl:gap-22 grid-cols-2 md:grid-cols-5">
+      <div className="grid items-center gap-6 sm:gap-10 md:gap-14 lg:gap-20 xl:gap-22 grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
         {skillsData &&
           skillsData?.map((skill: SkillItemProps) => (
             <div
