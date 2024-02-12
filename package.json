@@ -15,17 +15,22 @@
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/nodemailer": "^6.4.14",
     "clsx": "^2.1.0",
+    "isotope-layout": "^3.0.6",
     "next": "14.1.0",
     "next-themes": "^0.2.1",
+    "nodemailer": "^6.9.9",
     "react": "^18",
     "react-circular-progressbar": "^2.1.0",
     "react-countup": "^6.5.0",
     "react-dom": "^18",
     "sharp": "^0.32.6",
-    "tailwind-merge": "^2.2.1"
+    "tailwind-merge": "^2.2.1",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@types/isotope-layout": "^3.0.12",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

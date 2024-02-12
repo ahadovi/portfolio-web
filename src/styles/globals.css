@@ -7,7 +7,19 @@
     @apply dark:bg-[#1b1b1f] dark:text-textDark bg-white text-textLight;
   }
 }
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+/* Custom CSS */
 .mask-big {
   mask-image: url('/maskOne.svg');
   mask-repeat: no-repeat;
