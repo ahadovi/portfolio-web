@@ -68,7 +68,7 @@ export default function Home() {
               target="_blank"
               className="bg-lime-600 dark:bg-amber-500 py-2.5 px-6 rounded-full text-white mt-4 inline-flex items-center justify-center gap-x-2.5 font-medium lg:text-xl"
             >
-              <FontAwesomeIcon icon={faFileDownload} /> Download CV{' '}
+              <FontAwesomeIcon icon={faFileDownload} /> Resume{' '}
             </Link>
           </div>
         </div>
