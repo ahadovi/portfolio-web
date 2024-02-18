@@ -36,3 +36,32 @@
   @apply !stroke-bgInactiveLightLink dark:!stroke-bgInactiveDarkLink;
 }
 /* Circle Progressbar */
+
+.item::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease-out;
+}
+
+.item.right::before {
+  transform: translateX(100%);
+}
+
+.item.left::before {
+  transform: translateX(-100%);
+}
+
+.item.top::before {
+  transform: translateY(-100%);
+}
+
+.item.bottom::before {
+  transform: translateY(100%);
+}
+
+.item.center::before {
+  transform: translateX(0%) translateY(0%);
+}

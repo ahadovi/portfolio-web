@@ -26,14 +26,4 @@ export const portfolioTabMenuData: TabMenuDataType[] = [
     tabName: 'Next JS',
     filterName: 'next',
   },
-  {
-    id: 'c3036fa8-0ed3-4851-9015-f85cb3ab2494',
-    tabName: 'Angular',
-    filterName: 'ng',
-  },
-  {
-    id: 'e2779c51-ce6e-408e-8883-9bfbf4e829e6',
-    tabName: 'Wordpress',
-    filterName: 'wp',
-  },
 ];
