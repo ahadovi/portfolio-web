@@ -37,8 +37,7 @@ export async function sendEmail(formData: FormData) {
         'aria-live': 'polite',
       },
     });
-  } catch (error) {
-    toast('Message Sent Failed');
-    console.error('Error:', error);
+  } catch (error: any) {
+    toast(`Message Sent Failed - ${error?.message}`);
   }
 }

@@ -49,6 +49,7 @@ export default function Home() {
             <Link
               href="https://github.com/ahadovi"
               target="_blank"
+              aria-label="Github Profile"
               className="bg-lime-600 dark:bg-amber-500 w-11 h-11 lg:w-12 lg:h-12 rounded-full text-white mt-4 inline-flex items-center justify-center gap-x-2.5 font-medium lg:text-xl"
             >
               <FontAwesomeIcon icon={faGithub} />
@@ -57,6 +58,7 @@ export default function Home() {
             <Link
               href="https://www.linkedin.com/in/ahad-ovi/"
               target="_blank"
+              aria-label="Linkedin Profile"
               className="bg-lime-600 dark:bg-amber-500 w-11 h-11 lg:w-12 lg:h-12 rounded-full text-white mt-4 inline-flex items-center justify-center gap-x-2.5 font-medium lg:text-xl"
             >
               <FontAwesomeIcon icon={faLinkedin} />
@@ -66,6 +68,8 @@ export default function Home() {
               href="/cv/Abdul_Ahad_Ovi.pdf"
               download
               target="_blank"
+              role="download"
+              aria-label="Download Resume"
               className="bg-lime-600 dark:bg-amber-500 py-2.5 px-6 rounded-full text-white mt-4 inline-flex items-center justify-center gap-x-2.5 font-medium lg:text-xl"
             >
               <FontAwesomeIcon icon={faFileDownload} /> Resume{' '}
