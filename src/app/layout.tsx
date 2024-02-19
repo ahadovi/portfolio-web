@@ -5,6 +5,7 @@ import Navbar from '@/shared/navbar';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import type { Metadata } from 'next';
+import { Toaster } from 'react-hot-toast';
 import '../styles/globals.css';
 
 //= Font awesome auto css disabled
@@ -28,6 +29,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <ThemeSwitcher />
+          <Toaster position="top-right" />
           <TailwindIndicator />
         </ThemeWrap>
       </body>

@@ -12,14 +12,14 @@ export default function Home() {
   return (
     <main className="min-h-[calc(100dvh-80px)] md:min-h-dvh container py-6 lg:py-10 grid place-content-center">
       <div className="grid items-center text-center lg:text-left gap-6 lg:gap-10 grid-cols-1 lg:grid-cols-2">
-        <div className="">
+        <div className="drop-shadow-[0_8px_30px_rgb(0,0,0,0.15)]">
           <div className="mask-big hidden lg:block">
             <Image
               src={largeThumb}
               alt="Abdul Ahad ovi"
               sizes="100vw"
               placeholder="blur"
-              className="w-full h-auto"
+              className="w-full h-auto transition-all duration-500"
             />
           </div>
           <div className="lg:hidden">

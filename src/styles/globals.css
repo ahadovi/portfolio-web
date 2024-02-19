@@ -37,6 +37,12 @@
 }
 /* Circle Progressbar */
 
+/* Direction Revel Hover */
+.item {
+  @apply relative overflow-hidden;
+  transition: transform 0.3s ease;
+}
+
 .item::before {
   content: '';
   position: absolute;
@@ -47,7 +53,7 @@
 }
 
 .item.right::before {
-  transform: translateX(100%);
+  transform: translate3d(0, 100%, 0);
 }
 
 .item.left::before {
@@ -63,5 +69,6 @@
 }
 
 .item.center::before {
-  transform: translateX(0%) translateY(0%);
+  transform: translateX(0) translateY(0);
 }
+/* Direction Revel Hover */

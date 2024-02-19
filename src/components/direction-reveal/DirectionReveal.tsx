@@ -32,10 +32,7 @@ const DirectionReveal: React.FC<IDirectionRevealProps> = ({ children }) => {
   return (
     <div
       ref={containerRef}
-      className={cn(
-        'item relative overflow-hidden transition-all duration-300',
-        direction,
-      )}
+      className={cn('item', direction)}
       onMouseEnter={getDirection}
       onMouseLeave={() => setDirection('center')}
     >

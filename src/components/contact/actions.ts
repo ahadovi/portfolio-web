@@ -1,17 +1,8 @@
-'use server';
+'use client';
+import toast from 'react-hot-toast';
 import { z } from 'zod';
 
-interface StateProps {
-  name?: string;
-  subject?: string;
-  message?: string;
-  email?: string;
-}
-
-export async function sendEmail(
-  prevState: StateProps | undefined,
-  formData: FormData,
-): Promise<StateProps | undefined> {
+export async function sendEmail(formData: FormData) {
   const schema = z.object({
     name: z.string().min(1, 'Name is required'),
     subject: z.string().min(1, 'Subject is required'),
@@ -33,6 +24,21 @@ export async function sendEmail(
     };
   }
 
-  const data = result.data;
-  console.log(data);
+  const dataForm = result.data;
+  try {
+    const response = await fetch('/api/email', {
+      method: 'POST',
+      body: JSON.stringify(dataForm),
+    });
+    const result = await response.json();
+    toast(`${result?.message}`, {
+      ariaProps: {
+        role: 'status',
+        'aria-live': 'polite',
+      },
+    });
+  } catch (error) {
+    toast('Message Sent Failed');
+    console.error('Error:', error);
+  }
 }
